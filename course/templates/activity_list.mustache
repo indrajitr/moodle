@@ -23,10 +23,10 @@
 }}
 {{#search}}
     <form class="row">
+        <label for="search">
+            <span class="sr-only">{{#str}} searchactivitiesbyname, course {{/str}}</span>
+        </label>
         <div class="input-group pt-4 pb-1 col-md-6">
-            <label for="search">
-                <span class="sr-only">{{#str}} searchactivitiesbyname, course {{/str}}</span>
-            </label>
             <input type="text" name="search" id="search" class="form-control rounded-left" autocomplete="off"
                    placeholder="{{#str}}search, core {{/str}}" {{#query}} value="{{query}}" autofocus {{/query}}
             >
