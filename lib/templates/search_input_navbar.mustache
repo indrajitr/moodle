@@ -38,28 +38,28 @@
             {{#hiddenfields}}
                 <input type="hidden" name="{{ name }}" value="{{ value }}">
             {{/hiddenfields}}
+            <label for="searchinput-{{uniqid}}">
+                <span class="sr-only">{{{ searchstring }}}</span>
+            </label>
             <div class="input-group">
-                <label for="searchinput-{{uniqid}}">
-                    <span class="sr-only">{{{ searchstring }}}</span>
-                </label>
-                    <input type="text"
-                       id="searchinput-{{uniqid}}"
-                       class="form-control withclear"
-                       placeholder="{{{ searchstring }}}"
-                       aria-label="{{{ searchstring }}}"
-                       name="{{{ inputname }}}"
-                       data-region="input"
-                       autocomplete="off"
-                    >
-                    <a class="btn btn-close"
-                        data-action="closesearch"
-                        data-toggle="collapse"
-                        href="#searchform-navbar"
-                        role="button"
-                    >
-                        {{#pix}} e/cancel, core {{/pix}}
-                        <span class="sr-only">{{#str}} closebuttontitle {{/str}}</span>
-                    </a>
+                <input type="text"
+                    id="searchinput-{{uniqid}}"
+                    class="form-control withclear"
+                    placeholder="{{{ searchstring }}}"
+                    aria-label="{{{ searchstring }}}"
+                    name="{{{ inputname }}}"
+                    data-region="input"
+                    autocomplete="off"
+                >
+                <a class="btn btn-close"
+                    data-action="closesearch"
+                    data-toggle="collapse"
+                    href="#searchform-navbar"
+                    role="button"
+                >
+                    {{#pix}} e/cancel, core {{/pix}}
+                    <span class="sr-only">{{#str}} closebuttontitle {{/str}}</span>
+                </a>
                 <div class="input-group-append">
                     <button type="submit" class="btn btn-submit" data-action="submit">
                         {{#pix}} a/search, core {{/pix}}
