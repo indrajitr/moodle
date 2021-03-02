@@ -44,10 +44,10 @@
     {{#hiddenfields}}
         <input type="hidden" name="{{ name }}" value="{{ value }}">
     {{/hiddenfields}}
+    <label for="searchinput-{{uniqid}}">
+        <span class="sr-only">{{{ searchstring }}}</span>
+    </label>
     <div class="input-group">
-        <label for="searchinput-{{uniqid}}">
-            <span class="sr-only">{{{ searchstring }}}</span>
-        </label>
         <input type="text"
            id="searchinput-{{uniqid}}"
            class="form-control"

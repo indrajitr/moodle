@@ -30,10 +30,10 @@
         {{#str}} notification, tool_moodlenet, {"name": {{#quote}}{{name}}{{/quote}}, "cancellink": {{#quote}}{{cancellink}}{{/quote}}, "type": {{#quote}}{{type}}{{/quote}}  } {{/str}}
     </div>
     <h3>{{#str}} selectacourse {{/str}}</h3>
+    <label for="searchinput">
+        <span class="sr-only">{{#str}} searchcourses, tool_moodlenet {{/str}}</span>
+    </label>
     <div class="searchbar input-group w-50" role="search">
-        <label for="searchinput">
-            <span class="sr-only">{{#str}} searchcourses, tool_moodlenet {{/str}}</span>
-        </label>
         <input type="text"
                data-region="search-input"
                id="searchinput"
